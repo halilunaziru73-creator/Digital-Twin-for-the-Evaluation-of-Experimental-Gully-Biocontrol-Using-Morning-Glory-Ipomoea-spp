@@ -91,7 +91,7 @@ and data pipeline.
   - `03_train_deep_learning_model.py` — trains the real-data DNN.
   - `04_train_dl_nowcasting_model.py` — trains the discharge-nowcasting DNN.
   - `03_build_manuscript.js` — assembles the manuscript .docx.
-- `03_Data_Synthetic/` — synthetic-but-physically-consistent continuous
+- `03_Data/` — synthetic-but-physically-consistent continuous
   digital-twin datasets (hydrology, DEM-of-Difference grid, ML training
   set, scenario simulations, etc.) — 15 CSV/NPZ files.
 - `04_Figures/` — all 13 generated PNG figures (Figure 1 is the
@@ -114,7 +114,7 @@ and data pipeline.
 pip install numpy pandas matplotlib pillow scikit-learn scipy joblib --break-system-packages
 python3 02_Code/00_real_thesis_data.py            # -> 06_Data_Real_Field/*.csv
 python3 02_Code/01b_statistical_tests.py          # -> real significance tests
-python3 02_Code/01_generate_data.py               # -> 03_Data_Synthetic/*.csv
+python3 02_Code/01_generate_data.py               # -> 03_Data/*.csv
 python3 02_Code/02_generate_figures.py            # -> 04_Figures/*.png
 python3 02_Code/03_train_deep_learning_model.py   # -> 07_Trained_Models/, real-data DL results
 python3 02_Code/04_train_dl_nowcasting_model.py    # -> 07_Trained_Models/, nowcast DL results
@@ -148,7 +148,7 @@ print(model.predict(X_new))
 
 ## IMPORTANT — before submission
 1. **Only the data in `06_Data_Real_Field/` is real, measured data.**
-   Everything in `03_Data_Synthetic/` is synthetic-but-consistent,
+   Everything in `03_Data/` is synthetic-but-consistent,
    generated to make the full continuous digital twin demonstrable
    end-to-end (real field campaigns are necessarily discrete/episodic,
    not continuous hourly telemetry). This distinction is stated
