@@ -28,7 +28,8 @@ machine-learning, and statistical components of the framework.
   - `04_train_dl_nowcasting_model.py` — trains the discharge-nowcasting model.
 - `03_Data/` — the continuous digital-twin datasets (hydrology, DEM-of-Difference
   grid, machine-learning training set, scenario simulations, and related outputs).
-- `04_Figures/` — the manuscript's generated figures.
+- `04_Figures/` — all 14 manuscript figures, extracted directly from the
+  manuscript.
 - `05_Source_Images/` — the site location map, field photographs, and the two
   verified real-field intervention plates used in Figure 2.
 - `06_Data_Real_Field/` — the real field-measurement tables, the consolidated
@@ -41,25 +42,50 @@ machine-learning, and statistical components of the framework.
 
 ## Figures
 
-All figures referenced in the manuscript are included in `04_Figures/` (Figures
-2–14) and `05_Source_Images/` (Figure 1, the site location map):
+All 14 manuscript figures, extracted directly from the manuscript:
 
-| Figure | Description |
-|---|---|
-| 1 | Site location map (Bomo Basin) |
-| 2 | Field photographs and intervention plates |
-| 3 | Sensor installation architecture |
-| 4 | Real field validation data |
-| 5 | Digital-twin architecture |
-| 6 | Data processing and storage architecture |
-| 7 | Deep-learning architecture |
-| 8 | Calibration and validation |
-| 9 | DEM-of-Difference and sediment budget |
-| 10 | Vegetation effects |
-| 11 | Hydraulics and machine-learning results |
-| 12 | Deep-learning results |
-| 13 | Scenario and uncertainty analysis |
-| 14 | Digital-twin dashboard / 3-D visualization |
+![Location and topographic setting](04_Figures/Figure_01_location_topographic_setting.png)
+**Figure 1** — Location and topographic setting of the Bomo Basin study area,
+Sabon Gari LGA, Zaria.
+
+![Field photographs](04_Figures/Figure_02_field_photographs.png)
+**Figure 2** — Field photographs of the Bomo Gully experimental reaches.
+
+![Sensor installation architecture](04_Figures/Figure_03_sensor_installation_architecture.png)
+**Figure 3** — Sensor installation and data-recording architecture.
+
+![Real field validation data](04_Figures/Figure_04_real_field_validation_data.png)
+**Figure 4** — Real field-measured validation dataset.
+
+![Digital-twin architecture](04_Figures/Figure_05_digital_twin_architecture.png)
+**Figure 5** — Digital-twin architecture and data pipeline.
+
+![Data processing and storage architecture](04_Figures/Figure_06_data_processing_storage_architecture.png)
+**Figure 6** — Data processing, storage, and visualization architecture.
+
+![Deep-learning architecture](04_Figures/Figure_07_deep_learning_architecture.png)
+**Figure 7** — Deep-learning model architecture.
+
+![State estimation](04_Figures/Figure_08_state_estimation_observed_vs_simulated.png)
+**Figure 8** — Digital-twin state estimation: observed versus simulated.
+
+![DEM-of-Difference and sediment budget](04_Figures/Figure_09_DoD_sediment_budget.png)
+**Figure 9** — UAV-SfM DEM-of-Difference and sediment budget.
+
+![Vegetation effects](04_Figures/Figure_10_vegetation_effects.png)
+**Figure 10** — Biocontrol effectiveness of Morning Glory.
+
+![Hydraulics and machine learning](04_Figures/Figure_11_hydraulics_ML.png)
+**Figure 11** — Peak-flow depth and bed shear stress from the hydraulic model.
+
+![Deep-learning results](04_Figures/Figure_12_deep_learning_results.png)
+**Figure 12** — Deep-learning model training and performance.
+
+![Scenario and uncertainty analysis](04_Figures/Figure_13_scenario_uncertainty.png)
+**Figure 13** — Peak-discharge and sediment-yield scenario simulation.
+
+![Digital-twin dashboard](04_Figures/Figure_14_dashboard_3D_visualization.png)
+**Figure 14** — Digital-twin real-time dashboard and 3-D visualization.
 
 ## Reproducing the pipeline
 
