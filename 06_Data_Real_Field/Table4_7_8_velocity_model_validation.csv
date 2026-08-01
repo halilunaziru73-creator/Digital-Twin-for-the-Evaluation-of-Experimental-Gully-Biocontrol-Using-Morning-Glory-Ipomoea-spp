@@ -1,0 +1,11 @@
+condition,sediment_transport_kg_s_m,observed_velocity_ms,predicted_velocity_ms
+pre-control,0.8,0.95,0.98
+pre-control,1.1,1.15,1.15
+pre-control,1.4,1.39,1.39
+pre-control,1.8,1.58,1.57
+pre-control,2.1,1.77,1.73
+post-control,0.6,0.64,0.62
+post-control,0.9,0.79,0.79
+post-control,1.1,0.99,0.95
+post-control,1.3,1.17,1.11
+post-control,1.6,1.33,1.29

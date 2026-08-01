@@ -1,0 +1,11 @@
+Indicator,Baseline_no_biocontrol,After_biocontrol,Improvement_pct
+Average annual soil loss (t ha-1 yr-1),18.6,9.7,47.8
+"Peak discharge, 50-yr event (m3 s-1)",44.1,31.4,28.9
+"Sediment yield, 50-yr event (t ha-1 yr-1)",28.9,16.8,41.9
+"Headcut retreat, 50-yr event (m)",38.6,21.3,44.8
+Bank retreat (m),31.2,14.1,54.8
+Net erosion volume (m3),-1125,-412.0,63.3
+Sediment trapping efficiency (%),-,62.1,-
+Gully volume retention (%),-,68.7,-
+Vegetation cover (%),24.7,78.3,216.9
+Factor of safety (slope stability),1.08,1.47,36.1

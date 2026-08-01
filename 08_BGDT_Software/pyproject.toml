@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bgdt"
+version = "1.0.0"
+description = "Bomo Gully Digital Twin (BG-DT): a four-layer digital twin for evaluating experimental gully bioengineering (Morning Glory / Ipomoea spp.)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Naziru Halilu" }]
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "scipy>=1.10",
+    "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["bgdt*"]

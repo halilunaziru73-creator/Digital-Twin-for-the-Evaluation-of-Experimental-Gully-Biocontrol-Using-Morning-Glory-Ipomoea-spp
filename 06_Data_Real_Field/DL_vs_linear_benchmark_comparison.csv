@@ -1,0 +1,3 @@
+model,R2,RMSE_ms
+"Linear regression (Halilu, 2024 thesis benchmark)",0.13588531669689063,0.30573153124452185
+Deep neural network (this study),0.2630572177040591,0.28233935866065507

@@ -1,0 +1,8 @@
+parameter,first_order,total_order
+Rainfall intensity,0.42,0.52
+Soil erodibility (K),0.31,0.4
+Vegetation cover,0.22,0.3
+Slope gradient,0.18,0.24
+Manning's n,0.12,0.16
+Check-dam spacing,0.08,0.1
+Channel width,0.06,0.08

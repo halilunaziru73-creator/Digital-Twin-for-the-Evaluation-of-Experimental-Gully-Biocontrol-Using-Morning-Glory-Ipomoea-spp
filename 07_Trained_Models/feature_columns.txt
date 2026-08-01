@@ -1,0 +1,5 @@
+water_depth_m
+slope_decimal
+soil_shear_lb_ft2
+biocontrol
+ponding_depth_m

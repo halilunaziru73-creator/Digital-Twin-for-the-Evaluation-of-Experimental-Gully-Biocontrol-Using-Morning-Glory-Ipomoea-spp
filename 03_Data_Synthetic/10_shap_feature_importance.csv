@@ -1,0 +1,10 @@
+feature,mean_abs_shap
+Rainfall intensity,0.21
+Slope gradient,0.17
+Soil texture (clay %),0.14
+Flow length,0.11
+Vegetation cover,0.09
+Check dam density,0.08
+Soil moisture,0.05
+Manning's n,0.04
+Gully depth,0.03

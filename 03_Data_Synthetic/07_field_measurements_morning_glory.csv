@@ -1,0 +1,4 @@
+parameter,baseline_mean,baseline_sd,after_biocontrol_mean,after_biocontrol_sd,improvement_pct
+Vegetation height (cm),18.6,6.3,92.4,18.7,397.8
+Root length density (cm cm-3 x10-2),4.8,1.4,18.9,4.3,293.8
+Surface roughness Manning's n,0.033,0.004,0.041,0.005,24.2
