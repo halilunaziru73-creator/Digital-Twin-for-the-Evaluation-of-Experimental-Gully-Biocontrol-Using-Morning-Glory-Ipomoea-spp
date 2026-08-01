@@ -146,30 +146,7 @@ print(model.predict(X_new))
 - Document is 35 pages (LibreOffice PDF export, Times New Roman, standard
   margins).
 
-## IMPORTANT — before submission
-1. **Only the data in `06_Data_Real_Field/` is real, measured data.**
-   Everything in `03_Data/` is synthetic-but-consistent,
-   generated to make the full continuous digital twin demonstrable
-   end-to-end (real field campaigns are necessarily discrete/episodic,
-   not continuous hourly telemetry). This distinction is stated
-   explicitly in the manuscript (Section 3.5) — please keep it that way
-   in any further edits, for scientific integrity.
-2. **DL model performance on the real 100-record dataset is modest
-   (R²≈0.26-0.34).** This is reported honestly rather than inflated. With
-   only 100 real records split 75/25, this is a realistic and defensible
-   result, but reviewers may ask for a larger real dataset if you want to
-   push this number higher.
-3. **The 1.5 m ponding sediment-transport non-significance (p=0.19) is a
-   real, honest finding** — do not be tempted to remove or soften it; it
-   is scientifically valuable and strengthens the paper's credibility.
-4. **Verify every reference/DOI** in the reference list against CrossRef
-   before submission, including the new `Halilu2024` thesis citation
-   (currently formatted as an unpublished B.Eng. project reference —
-   update if it becomes formally archived/published).
-5. Regenerate the Graphical Abstract separately per the journal's Guide
-   for Authors.
-6. Deposit code/data/models to a permanent repository (e.g., Zenodo) and
-   update the Data/Software availability statements with the real DOI.
+
 
 ## Author
 Naziru Halilu, 2026 .
