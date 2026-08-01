@@ -172,4 +172,4 @@ print(model.predict(X_new))
    update the Data/Software availability statements with the real DOI.
 
 ## Author
-Naziru Halilu, 2026 (draft — for author review and completion).
+Naziru Halilu, 2026 .
