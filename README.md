@@ -6,6 +6,19 @@
 
 **Author:** Naziru Halilu
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Contents](#contents)
+- [Figures](#figures)
+- [How to Run the Code](#how-to-run-the-code)
+- [Loading a trained model](#loading-a-trained-model)
+- [Key findings](#key-findings)
+- [License](#license)
+- [Author](#author)
+- [Citation](#citation)
+- [Related work](#related-work)
+
 ## Overview
 
 This repository presents a Bayesian-grounded digital-twin framework for evaluating
