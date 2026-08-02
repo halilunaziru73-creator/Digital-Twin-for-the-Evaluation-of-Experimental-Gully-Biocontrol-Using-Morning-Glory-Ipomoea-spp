@@ -87,10 +87,26 @@ Sabon Gari LGA, Zaria.
 ![Digital-twin dashboard](04_Figures/Figure_14_dashboard_3D_visualization.png)
 **Figure 14** — Digital-twin real-time dashboard and 3-D visualization.
 
-## Reproducing the pipeline
+## How to Run the Code
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/halilunaziru73-creator/Digital-Twin-for-the-Evaluation-of-Experimental-Gully-Biocontrol-Using-Morning-Glory-Ipomoea-spp.git
+cd Digital-Twin-for-the-Evaluation-of-Experimental-Gully-Biocontrol-Using-Morning-Glory-Ipomoea-spp
+```
+
+### 2. Install dependencies
 
 ```bash
 pip install numpy pandas matplotlib pillow scikit-learn scipy joblib --break-system-packages
+```
+
+### 3. Reproducing the pipeline
+
+Run the scripts in order from the repository root:
+
+```bash
 
 python3 02_Code/00_real_thesis_data.py            # -> 06_Data_Real_Field/*.csv
 python3 02_Code/01b_statistical_tests.py          # -> statistical significance tests
