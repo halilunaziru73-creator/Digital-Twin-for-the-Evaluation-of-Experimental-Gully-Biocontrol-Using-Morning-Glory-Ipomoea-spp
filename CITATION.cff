@@ -14,3 +14,7 @@ keywords:
   - biocontrol
   - Bayesian methods
   - soil conservation
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21760023"
+    description: "Archived snapshot of version v1.0.0 on Zenodo"
