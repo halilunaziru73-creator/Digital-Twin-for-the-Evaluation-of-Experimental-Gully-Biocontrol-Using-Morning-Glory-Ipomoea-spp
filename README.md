@@ -1,4 +1,6 @@
 # Digital Twin for the Evaluation of Experimental Gully Biocontrol
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ### Morning Glory (*Ipomoea* spp. / *Ipomoea carnea*) — Bomo Gully, Zaria, Nigeria
 
 **Author:** Naziru Halilu
@@ -160,6 +162,12 @@ Released under the [MIT License](./LICENSE).
 ## Author
 
 Naziru Halilu, 2026.
+
+## Citation
+
+If you use this repository, please cite it using the metadata in
+[`CITATION.cff`](./CITATION.cff) (GitHub renders a "Cite this repository"
+button on the repo's main page, in the top-right "About" panel).
 
 ## Related work
 
