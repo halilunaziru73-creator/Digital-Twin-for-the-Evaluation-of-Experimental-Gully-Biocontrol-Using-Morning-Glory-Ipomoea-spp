@@ -1,20 +1,23 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite it as below."
+message: If you use this software or data, please cite it as below.
 type: software
-title: "Digital Twin for the Evaluation of Experimental Gully Biocontrol Using Morning Glory (Ipomoea spp.)"
+title: Digital Twin for the Evaluation of Experimental Gully Biocontrol Using Morning
+  Glory (Ipomoea spp.)
 authors:
-  - family-names: Halilu
-    given-names: Naziru
-repository-code: "https://github.com/halilunaziru73-creator/Digital-Twin-for-the-Evaluation-of-Experimental-Gully-Biocontrol-Using-Morning-Glory-Ipomoea-spp"
+- family-names: Halilu
+  given-names: Naziru
+  orcid: https://orcid.org/0009-0006-2324-9599
+repository-code: https://github.com/halilunaziru73-creator/Digital-Twin-for-the-Evaluation-of-Experimental-Gully-Biocontrol-Using-Morning-Glory-Ipomoea-spp
 license: MIT
-date-released: "2026-08-02"
+date-released: '2026-08-02'
 keywords:
-  - digital twin
-  - gully erosion
-  - biocontrol
-  - Bayesian methods
-  - soil conservation
+- digital twin
+- gully erosion
+- biocontrol
+- Bayesian methods
+- soil conservation
 identifiers:
-  - type: doi
-    value: "10.5281/zenodo.21760023"
-    description: "Archived snapshot of version v1.0.0 on Zenodo"
+- type: doi
+  value: 10.5281/zenodo.21760023
+  description: Archived snapshot of version v1.0.0 on Zenodo
+version: 1.0.0
