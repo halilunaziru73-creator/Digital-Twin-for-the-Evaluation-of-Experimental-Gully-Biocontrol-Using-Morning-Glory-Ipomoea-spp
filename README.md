@@ -98,7 +98,9 @@ water level sensor, soil moisture and temperature probes (TDR), sediment
 trap, water-quality multi-parameter sonde (temperature, EC, pH), piezometer
 (groundwater level), and combined water-level/EC sensor — the physical
 sensing layer feeding the digital-twin data pipeline shown schematically in
-Figure 3.
+Figure 3. *(Original field photograph, denoised/sharpened and contrast-corrected
+for clarity due to poor source camera quality; labels and equipment are
+unaltered.)*
 
 ## How to Run the Code
 
