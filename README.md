@@ -91,6 +91,7 @@ Sabon Gari LGA, Zaria.
 ### Supplementary Figure — Field Instrumentation and Sensor Array
 
 ![Annotated field instrumentation and sensor array](05_Source_Images/Field_Instrumentation_Sensor_Array.png)
+
 **Supplementary Figure** — Annotated photographs of the deployed field
 instrumentation: solar panel, LoRa antenna, GNSS base stations, weather
 station (temperature, humidity, pressure, rainfall, wind), staff gauge /
