@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+type: software
+title: "Digital Twin for the Evaluation of Experimental Gully Biocontrol Using Morning Glory (Ipomoea spp.)"
+authors:
+  - family-names: Halilu
+    given-names: Naziru
+repository-code: "https://github.com/halilunaziru73-creator/Digital-Twin-for-the-Evaluation-of-Experimental-Gully-Biocontrol-Using-Morning-Glory-Ipomoea-spp"
+license: MIT
+date-released: "2026-08-02"
+keywords:
+  - digital twin
+  - gully erosion
+  - biocontrol
+  - Bayesian methods
+  - soil conservation
