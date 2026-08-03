@@ -1,7 +1,7 @@
 # Digital Twin for the Evaluation of Experimental Gully Biocontrol
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21760023.svg)](https://doi.org/10.5281/zenodo.21760023)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21760022.svg)](https://doi.org/10.5281/zenodo.21760022)
 ### Morning Glory (*Ipomoea* spp. / *Ipomoea carnea*) — Bomo Gully, Zaria, Nigeria
 
 **Author:** Naziru Halilu
