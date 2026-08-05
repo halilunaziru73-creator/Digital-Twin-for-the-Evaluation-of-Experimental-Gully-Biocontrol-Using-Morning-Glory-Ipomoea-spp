@@ -20,10 +20,10 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Arc
 from PIL import Image
 from pathlib import Path
 
-DATA = Path("/home/claude/dt_gully/data")
-FIG = Path("/home/claude/dt_gully/figures")
+DATA = Path(__file__).resolve().parent.parent / "03_Data"
+FIG = Path(__file__).resolve().parent.parent / "04_Figures"
 FIG.mkdir(parents=True, exist_ok=True)
-UP = Path("/mnt/user-data/uploads")
+UP = Path(__file__).resolve().parent.parent / "05_Source_Images"
 
 plt.rcParams.update({
     "font.family": "DejaVu Sans", "font.size": 9, "axes.titlesize": 9.3,
@@ -42,7 +42,7 @@ def lab(letter, text):
 # =====================================================================
 # FIGURE 2 - Field photographs of the Bomo Gully experimental reaches
 # =====================================================================
-THESIS_PHOTOS = Path("/home/claude/dt_gully/data_real/thesis_photos")
+THESIS_PHOTOS = Path("06_Data_Real_Field/thesis_photos")
 photos = [
     ("PXL_20260623_102136417.jpg", UP, "A", "Morning Glory (Ipomoea spp.) vegetation strip,\ntreated reach (~10 weeks after planting)"),
     ("PXL_20260623_102244103.jpg", UP, "B", "Active headcut and bare eroding bank,\nuntreated control reach"),
@@ -258,7 +258,7 @@ plt.close(fig)
 # =====================================================================
 # FIGURE 4 - Real field-measured validation dataset (Halilu, 2024 thesis)
 # =====================================================================
-DATA_REAL = Path("/home/claude/dt_gully/data_real")
+DATA_REAL = Path(__file__).resolve().parent.parent / "06_Data_Real_Field"
 real_long = pd.read_csv(DATA_REAL / "Real_field_dataset_consolidated.csv")
 t47_48 = pd.read_csv(DATA_REAL / "Table4_7_8_velocity_model_validation.csv")
 

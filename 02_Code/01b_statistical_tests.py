@@ -15,14 +15,14 @@ Tests used:
   - Shapiro-Wilk normality check on the paired differences, to justify
     the choice of non-parametric test.
 
-Output: /home/claude/dt_gully/data_real/Statistical_significance_tests.csv
+Output: 06_Data_Real_Field/Statistical_significance_tests.csv
 """
 import pandas as pd
 import numpy as np
 from pathlib import Path
 from scipy import stats
 
-DATA = Path("/home/claude/dt_gully/data_real")
+DATA = Path(__file__).resolve().parent.parent / "06_Data_Real_Field"
 
 t42 = pd.read_csv(DATA / "Table4_2_precontrol_baseline.csv")
 t44 = pd.read_csv(DATA / "Table4_4_postcontrol_ponding_1_0m.csv")

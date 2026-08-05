@@ -21,12 +21,12 @@ in the manuscript are computed directly from this real training run (not
 fabricated). Trained models are serialized with joblib for reuse.
 
 Outputs:
-  /home/claude/dt_gully/data_real/DL_training_history.csv
-  /home/claude/dt_gully/data_real/DL_test_predictions.csv
-  /home/claude/dt_gully/data_real/DL_performance_metrics.csv
-  /home/claude/dt_gully/models/dnn_sediment_transport.joblib
-  /home/claude/dt_gully/models/dnn_velocity.joblib
-  /home/claude/dt_gully/models/scaler_X.joblib
+  06_Data_Real_Field/DL_training_history.csv
+  06_Data_Real_Field/DL_test_predictions.csv
+  06_Data_Real_Field/DL_performance_metrics.csv
+  07_Trained_Models/dnn_sediment_transport.joblib
+  07_Trained_Models/dnn_velocity.joblib
+  07_Trained_Models/scaler_X.joblib
 """
 import numpy as np
 import pandas as pd
@@ -37,8 +37,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import joblib
 
-DATA = Path("/home/claude/dt_gully/data_real")
-MODELS = Path("/home/claude/dt_gully/models")
+DATA = Path(__file__).resolve().parent.parent / "06_Data_Real_Field"
+MODELS = Path(__file__).resolve().parent.parent / "07_Trained_Models"
 MODELS.mkdir(parents=True, exist_ok=True)
 rng_seed = 42
 
