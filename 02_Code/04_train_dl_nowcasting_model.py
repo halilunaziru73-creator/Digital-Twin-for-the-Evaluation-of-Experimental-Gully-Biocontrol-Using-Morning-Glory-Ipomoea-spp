@@ -14,10 +14,10 @@ sample deep-learning result for the digital twin's real-time Brain-layer
 nowcasting service. All metrics are computed from a genuine training run.
 
 Outputs:
-  /home/claude/dt_gully/data_real/DL_nowcast_training_history.csv
-  /home/claude/dt_gully/data_real/DL_nowcast_test_predictions.csv
-  /home/claude/dt_gully/data_real/DL_nowcast_performance_metrics.csv
-  /home/claude/dt_gully/models/dnn_discharge_nowcast.joblib
+  06_Data_Real_Field/DL_nowcast_training_history.csv
+  06_Data_Real_Field/DL_nowcast_test_predictions.csv
+  06_Data_Real_Field/DL_nowcast_performance_metrics.csv
+  07_Trained_Models/dnn_discharge_nowcast.joblib
 """
 import numpy as np
 import pandas as pd
@@ -27,9 +27,9 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 import joblib
 
-DATA_SYN = Path("/home/claude/dt_gully/data")
-DATA_REAL = Path("/home/claude/dt_gully/data_real")
-MODELS = Path("/home/claude/dt_gully/models")
+DATA_SYN = Path(__file__).resolve().parent.parent / "03_Data"
+DATA_REAL = Path(__file__).resolve().parent.parent / "06_Data_Real_Field"
+MODELS = Path(__file__).resolve().parent.parent / "07_Trained_Models"
 seed = 42
 
 ts = pd.read_csv(DATA_SYN / "01_dt_state_estimation_timeseries.csv", parse_dates=["datetime"])

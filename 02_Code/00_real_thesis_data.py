@@ -21,12 +21,12 @@ after 1.5 m ponding; post-control after 1.5 m ponding), and Table 4.7-4.8
 post-control).
 
 These are REAL measured values transcribed directly from the thesis
-manuscript (not synthetic). Output: /home/claude/dt_gully/data_real/*.csv
+manuscript (not synthetic). Output: 06_Data_Real_Field/*.csv
 """
 import pandas as pd
 from pathlib import Path
 
-OUT = Path("/home/claude/dt_gully/data_real")
+OUT = Path(__file__).resolve().parent.parent / "06_Data_Real_Field"
 OUT.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------

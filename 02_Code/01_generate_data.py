@@ -13,14 +13,14 @@ autocorrelation structured to mimic field/sensor data) so that the
 Digital-Twin outputs used in the figures/manuscript are reproducible.
 
 Author: N. Halilu et al. (2026)
-Output: /home/claude/dt_gully/data/*.csv
+Output: 03_Data/*.csv
 """
 
 import numpy as np
 import pandas as pd
 from pathlib import Path
 
-OUT = Path("/home/claude/dt_gully/data")
+OUT = Path(__file__).resolve().parent.parent / "03_Data"
 OUT.mkdir(parents=True, exist_ok=True)
 rng = np.random.default_rng(42)
 
