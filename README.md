@@ -104,19 +104,6 @@ Sabon Gari LGA, Zaria.
 ![Digital-twin dashboard](04_Figures/Figure_14_dashboard_3D_visualization.png)
 **Figure 14** — Digital-twin real-time dashboard and 3-D visualization.
 
-### Supplementary Figure — Field Instrumentation and Sensor Array
-
-![Annotated field instrumentation and sensor array](05_Source_Images/Field_Instrumentation_Sensor_Array.png)
-
-**Supplementary Figure** — Annotated photographs of the deployed field
-instrumentation: solar panel, LoRa antenna, GNSS base stations, weather
-station (temperature, humidity, pressure, rainfall, wind), staff gauge /
-water level sensor, soil moisture and temperature probes (TDR), sediment
-trap, water-quality multi-parameter sonde (temperature, EC, pH), piezometer
-(groundwater level), and combined water-level/EC sensor — the physical
-sensing layer feeding the digital-twin data pipeline shown schematically in
-Figure 3.
-
 ## How to Run the Code
 
 ### 1. Clone the repository
