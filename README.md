@@ -7,6 +7,8 @@
 **Author:** Naziru Halilu
 
 
+![Graphical Abstract](graphical_abstract.png)
+
 ## Problem, Methodology, and Results
 
 **Problem.** Gully erosion threatens peri-urban livelihoods across sub-Saharan Africa, yet few frameworks couple real-time monitoring with predictive, decision-ready simulation of low-cost bioengineering countermeasures — meaning interventions are usually reported only as static pre/post measurements, with no way to forecast performance under unobserved storm events or check-dam failure.
