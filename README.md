@@ -6,6 +6,15 @@
 
 **Author:** Naziru Halilu
 
+
+## Problem, Methodology, and Results
+
+**Problem.** Gully erosion threatens peri-urban livelihoods across sub-Saharan Africa, yet few frameworks couple real-time monitoring with predictive, decision-ready simulation of low-cost bioengineering countermeasures — meaning interventions are usually reported only as static pre/post measurements, with no way to forecast performance under unobserved storm events or check-dam failure.
+
+**Methodology.** This study develops and field-validates a four-layer Digital Twin (Physical, Digital, Brain, Service) that fuses UAV-SfM topography, in-situ hydro-sedimentological sensors, a coupled HEC-HMS / HEC-RAS-2D / RUSLE-LISEM model core, Bayesian data assimilation, and a SHAP-interpretable machine-learning sediment-yield predictor. It was applied to a 15-week rainy-season field trial of Morning Glory (*Ipomoea* spp.) vegetative biocontrol in the Bomo Gully, Zaria, Nigeria.
+
+**Results.** The Digital Twin reproduced observed discharge, water level, soil moisture, and sediment concentration with NSE = 0.88–0.94. The biocontrol trial reduced average annual soil loss by 47.8%, peak 50-year discharge by 28.9%, and headcut retreat by 44.8%, while increasing gully-volume retention to 68.7%. 50-year return-period simulations project a 59% reduction in structural failure probability.
+
 ## Table of Contents
 
 - [Overview](#overview)
