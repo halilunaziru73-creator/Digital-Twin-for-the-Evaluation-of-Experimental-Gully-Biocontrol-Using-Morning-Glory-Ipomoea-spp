@@ -30,6 +30,8 @@
   .bubble-name { font-size:12px; color:var(--text-secondary); margin:0 0 4px; }
   .bubble { background:var(--bg); border-radius:12px; border-top-left-radius:4px; padding:0.85rem 1rem;
     min-height:52px; display:flex; align-items:center; font-size:14.5px; line-height:1.6; }
+  .step-figure { width:100%; border-radius:10px; border:1px solid var(--border); margin:12px 0 4px; display:block; }
+  .step-figure-cap { font-size:11.5px; color:var(--text-secondary); margin:0 0 12px; }
   .figure { width:100%; border-radius:10px; border:1px solid var(--border); margin-bottom:1.25rem; display:block; }
   .ask-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-top:1.25rem; }
   .ask-title { font-size:15px; font-weight:600; margin:0 0 4px; }
@@ -71,6 +73,8 @@
       <div class="bubble-col">
         <p class="bubble-name">Naziru explains this step</p>
         <div class="bubble" id="detail"></div>
+        <img class="step-figure" id="step-figure" src="" alt="">
+        <p class="step-figure-cap" id="step-figure-cap"></p>
       </div>
     </div>
   </div>
@@ -129,7 +133,7 @@ async function sendQuestion() {
 }
 </script>
 <script>
-const steps = [{"t": "UAV-SfM topography", "d": "We fly a drone over the Bomo Gully every few weeks and turn the photos into a 3D terrain model \u2014 this is the only way to actually see how fast the gully walls are collapsing between visits."}, {"t": "Sensor network", "d": "A field kit of solar-powered sensors (discharge, water level, soil moisture, sediment) reports around the clock, so the twin never has to guess what happened overnight."}, {"t": "HEC-HMS / RAS-2D / RUSLE-LISEM", "d": "The physics core simulates water and sediment moving through the gully \u2014 the same equation set used to design real flood infrastructure, just pointed at a small African catchment."}, {"t": "Bayesian assimilation", "d": "Every new sensor reading nudges the model back on track, so small forecast errors never snowball into a wrong recommendation."}, {"t": "SHAP ML sediment model", "d": "A Sobol sensitivity analysis found something surprising: vegetation cover \u2014 not slope, not roughness \u2014 is the single largest lever we can actually control to cut sediment-yield uncertainty. That reframes Morning Glory planting as an uncertainty-reduction tool, not just erosion control."}, {"t": "Decision support", "d": "Even under a +20% rainfall shock simulating climate change, the biocontrol treatment kept most of its protective effect \u2014 nature-based rehabilitation holding up when it matters most, at a fraction of the cost of concrete."}];
+const steps = [{"t": "UAV-SfM topography", "img": "../04_Figures/Figure_01_location_topographic_setting.png", "d": "We fly a drone over the Bomo Gully every few weeks and run the photos through Structure-from-Motion software, which stitches hundreds of overlapping images into a single high-resolution 3D terrain model \u2014 the only way to actually see how fast the gully walls are collapsing between visits."}, {"t": "Sensor network", "img": "../04_Figures/Figure_03_sensor_installation_architecture.png", "d": "A field kit of solar-powered sensors (discharge, water level, soil moisture, sediment concentration) reports around the clock over LoRa radio, so the twin never has to guess what happened overnight while no one was watching."}, {"t": "Model core", "img": "../04_Figures/Figure_05_digital_twin_architecture.png", "d": "The physics core couples HEC-HMS (rainfall-runoff), HEC-RAS-2D (hydraulics) and RUSLE-LISEM (erosion) \u2014 the same equation set engineers use to design real flood infrastructure, here pointed at a small African catchment and run continuously rather than once."}, {"t": "Bayesian assimilation", "img": "../04_Figures/Figure_08_state_estimation_observed_vs_simulated.png", "d": "Every new sensor reading nudges the model's internal state back toward reality through Bayesian updating, so small forecast errors get corrected before they can snowball into a wrong recommendation."}, {"t": "SHAP ML predictor", "img": "../04_Figures/Figure_11_hydraulics_ML.png", "d": "A Sobol sensitivity analysis ran systematically across every input variable and found something surprising: vegetation cover \u2014 not slope, not roughness \u2014 is the single largest lever we can actually control to cut sediment-yield uncertainty. SHAP values then show exactly how much each variable pushes the prediction up or down."}, {"t": "Decision support", "img": "../04_Figures/Figure_13_scenario_uncertainty.png", "d": "We re-ran the whole system under a +20% rainfall shock simulating climate change, and the biocontrol treatment kept most of its protective effect \u2014 nature-based rehabilitation holding up when it matters most, at a fraction of the cost of concrete."}];
 let idx = 0;
 let timer = null;
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -174,6 +178,18 @@ function render() {
   });
   document.getElementById('detail').textContent = 'Step ' + (idx + 1) + ' — ' + steps[idx].t + '. ' + steps[idx].d;
   document.getElementById('particle').setAttribute('cx', nodeX(idx, steps.length));
+  const fig = document.getElementById('step-figure');
+  const cap = document.getElementById('step-figure-cap');
+  if (steps[idx].img) {
+    fig.src = steps[idx].img;
+    fig.alt = steps[idx].t;
+    fig.style.display = 'block';
+    cap.textContent = 'Figure from the manuscript — ' + steps[idx].t;
+    cap.style.display = 'block';
+  } else {
+    fig.style.display = 'none';
+    cap.style.display = 'none';
+  }
 }
 
 function tick() { idx = (idx + 1) % steps.length; render(); }
