@@ -9,6 +9,10 @@
 
 ![Graphical Abstract](graphical_abstract.png)
 
+**Workflow sketch**
+
+![Workflow Sketch](workflow_sketch.png)
+
 [View interactive graphical abstract →](https://halilunaziru73-creator.github.io/Digital-Twin-for-the-Evaluation-of-Experimental-Gully-Biocontrol-Using-Morning-Glory-Ipomoea-spp/)
 
 ## Problem, Methodology, and Results
