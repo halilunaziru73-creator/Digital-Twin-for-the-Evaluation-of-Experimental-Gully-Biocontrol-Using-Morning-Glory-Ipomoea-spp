@@ -7,8 +7,6 @@
 **Author:** Naziru Halilu
 
 
-![Graphical Abstract](graphical_abstract.png)
-
 **Workflow sketch**
 
 ![Workflow Sketch](workflow_sketch.png)
